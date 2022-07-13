@@ -1,4 +1,4 @@
-projectName = "tftemplate"
+projectName = "aks"
 env         = "dev"
 location    = "eastus"
 

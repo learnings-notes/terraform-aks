@@ -1,6 +1,6 @@
 variable "projectName" {
   type    = string
-  default = "appsvc"
+  default = "aks"
 }
 variable "env" {
   type    = string
