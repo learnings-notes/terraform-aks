@@ -31,9 +31,10 @@ module "network" {
   subnet_names        = ["AzureFirewallSubnet", "AzureBastionSubnet", "AzureApplicationGateWaySubnet", "AksClusterNodesSubnet"]
 
   subnet_service_endpoints = {
-    "subnet1" : ["Microsoft.Sql"],
-    "subnet2" : ["Microsoft.Sql"],
-    "subnet3" : ["Microsoft.Sql"]
+    "AzureFirewallSubnet" : ["Microsoft.Sql"],
+    "AzureBastionSubnet" : ["Microsoft.Sql"],
+    "AzureApplicationGateWaySubnet" : ["Microsoft.Sql"],
+    "AksClusterNodesSubnet" : ["Microsoft.Sql"]
   }
 
   tags = {
