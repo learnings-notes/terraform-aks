@@ -26,8 +26,8 @@ module "network" {
   source              = "Azure/network/azurerm"
   vnet_name           = "${var.vnet_name}-${var.projectName}"
   resource_group_name = azurerm_resource_group.rg.name
-  address_spaces      = ["10.1.0.0/16"]
-  subnet_prefixes     = ["10.1.0.0/24", "10.1.1.0/24", "10.1.2.0/24", "10.1.4.0/22"]
+  address_spaces      = ["10.2.0.0/16"]
+  subnet_prefixes     = ["10.2.0.0/24", "10.2.1.0/24", "10.2.2.0/24", "10.2.4.0/22"]
   subnet_names        = ["AzureFirewallSubnet", "AzureBastionSubnet", "AzureApplicationGateWaySubnet", "AksClusterNodesSubnet"]
 
   subnet_service_endpoints = {
